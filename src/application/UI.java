@@ -66,6 +66,12 @@ public class UI {
 		
 		System.out.println("Turn: " + chessMatch.getTurn());
 		System.out.println("Waiting player: " + chessMatch.getCurrentPlayer());
+		System.out.println();
+		
+		if(chessMatch.getCheck()) {
+			
+			System.out.println("CHECK!");
+		}
 	}
 	
 	public static void printBoard(ChessPiece[][] pieces) {
@@ -83,7 +89,7 @@ public class UI {
 		System.out.println("  a b c d e f g h");
 	}
 	
-public static void printBoard(ChessPiece[][] pieces, boolean[][] possibleMoves) {
+	public static void printBoard(ChessPiece[][] pieces, boolean[][] possibleMoves) {
 		
 		for(int i = 0; i < pieces.length; i++) {
 			
